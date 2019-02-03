@@ -1,0 +1,430 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\Administrator\Desktop\tcp_iap_download\USER\ENC28J60.uvproj
+Project File Date:  04/09/2014
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling main.c...
+eth0.h(17): warning:  #1-D: last line of file ends without a newline
+eth0.h:   void uip_polling(void);        
+eth0.h:                                  ^
+main.c(52): warning:  #223-D: function "IAP_update" declared implicitly
+main.c:                 IAP_update();
+main.c:                 ^
+main.c(55): warning:  #223-D: function "IAP_run" declared implicitly
+main.c:                 IAP_run();      
+main.c:                 ^
+main.c: main.c: 3 warnings, 0 errors
+compiling eth0.c...
+eth0.h(17): warning:  #1-D: last line of file ends without a newline
+eth0.h:   void uip_polling(void);        
+eth0.h:                                  ^
+eth0.c(42): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+eth0.c:         if(!strcmp("ready",tcp_client_databuf))        //收到ready信号
+eth0.c:                            ^
+eth0.c(47): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+eth0.c:                           if(!strcmp("over",tcp_client_databuf))        //收到ready信号
+eth0.c:                                             ^
+eth0.c(53): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+eth0.c:                           if(!strcmp("run_now",tcp_client_databuf))        //收到ready信号
+eth0.c:                                                ^
+eth0.c(75): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+eth0.c:                 sprintf((char*)tcp_client_databuf,eth0_string);  
+eth0.c:                                                   ^
+eth0.c(167): warning:  #177-D: variable "i" was declared but never referenced
+eth0.c:         u16 i;
+eth0.c:             ^
+eth0.c: eth0.c: 6 warnings, 0 errors
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+compiling led.c...
+compiling timerx.c...
+compiling stmflash.c...
+compiling key.c...
+compiling spi_enc28j60.c...
+..\HARDWARE\new_enc28\spi_enc28j60.c(14): warning:  #177-D: variable "NVIC_InitStructure" was declared but never referenced
+..\HARDWARE\new_enc28\spi_enc28j60.c:        NVIC_InitTypeDef NVIC_InitStructure;
+..\HARDWARE\new_enc28\spi_enc28j60.c:                         ^
+..\HARDWARE\new_enc28\spi_enc28j60.c(15): warning:  #177-D: variable "EXTI_InitStructure" was declared but never referenced
+..\HARDWARE\new_enc28\spi_enc28j60.c:       EXTI_InitTypeDef EXTI_InitStructure;
+..\HARDWARE\new_enc28\spi_enc28j60.c:                        ^
+..\HARDWARE\new_enc28\spi_enc28j60.c: ..\HARDWARE\new_enc28\spi_enc28j60.c: 2 warnings, 0 errors
+compiling enc28j60.c...
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+compiling core_cm3.c...
+compiling misc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_flash.c...
+compiling psock.c...
+compiling timer.c...
+compiling uip.c...
+compiling uip_arp.c...
+compiling uip-fw.c...
+compiling uiplib.c...
+compiling uip-neighbor.c...
+compiling uip-split.c...
+compiling clock-arch.c...
+compiling tapdev.c...
+compiling tcp_client_demo.c...
+..\USER\eth0.h(17): warning:  #1-D: last line of file ends without a newline
+..\USER\eth0.h:   void uip_polling(void);        
+..\USER\eth0.h:                                  ^
+..\uIP-APP\tcp_client_demo.c(60): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+..\uIP-APP\tcp_client_demo.c:                 strcpy(tcp_client_databuf,uip_appdata);   
+..\uIP-APP\tcp_client_demo.c:                        ^
+..\uIP-APP\tcp_client_demo.c: ..\uIP-APP\tcp_client_demo.c: 2 warnings, 0 errors
+compiling tcp_demo.c...
+compiling iap.c...
+..\IAP\iap.c(54): warning:  #223-D: function "MSR_MSP" declared implicitly
+..\IAP\iap.c:                   MSR_MSP(*(vu32*)appxaddr);                                      //初始化APP堆栈指针(用户代码区的第一个字用于存放栈顶地址)
+..\IAP\iap.c:                   ^
+..\IAP\iap.c(55): warning:  #223-D: function "INTX_DISABLE" declared implicitly
+..\IAP\iap.c:                   INTX_DISABLE();
+..\IAP\iap.c:                   ^
+..\IAP\iap.c: ..\IAP\iap.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=21678 RO-data=358 RW-data=180 ZI-data=44140  
+FromELF: creating hex file...
+"..\OBJ\ENC28J60.axf" - 0 Error(s), 15 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+eth0.h(21): warning:  #1-D: last line of file ends without a newline
+eth0.h:   void IAP_update(void);                                                //将收到的.bin文件烧写到FLASH中
+eth0.h:                                                                                                        ^
+eth0.h: main.c: 1 warning, 0 errors
+compiling eth0.c...
+eth0.h(21): warning:  #1-D: last line of file ends without a newline
+eth0.h:   void IAP_update(void);                                                //将收到的.bin文件烧写到FLASH中
+eth0.h:                                                                                                        ^
+eth0.c(40): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+eth0.c:         if(!strcmp("ready",tcp_client_databuf))        //收到ready信号
+eth0.c:                            ^
+eth0.c(45): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+eth0.c:                           if(!strcmp("over",tcp_client_databuf))        //收到ready信号
+eth0.c:                                             ^
+eth0.c(51): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+eth0.c:                           if(!strcmp("run_now",tcp_client_databuf))        //收到ready信号
+eth0.c:                                                ^
+eth0.c(73): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+eth0.c:                 sprintf((char*)tcp_client_databuf,eth0_string);  
+eth0.c:                                                   ^
+eth0.c(163): error:  #147: declaration is incompatible with "void IAP_update(void)" (declared at line 21 of "eth0.h")
+eth0.c:   IAP_update()
+eth0.c:   ^
+eth0.c(165): warning:  #177-D: variable "i" was declared but never referenced
+eth0.c:         u16 i;
+eth0.c:             ^
+eth0.c(205): error:  #147: declaration is incompatible with "void IAP_run(void)" (declared at line 20 of "eth0.h")
+eth0.c:   IAP_run()                                                     
+eth0.c:   ^
+eth0.c: eth0.c: 6 warnings, 2 errors
+compiling tcp_client_demo.c...
+..\USER\eth0.h(21): warning:  #1-D: last line of file ends without a newline
+..\USER\eth0.h:   void IAP_update(void);                                                //将收到的.bin文件烧写到FLASH中
+..\USER\eth0.h:                                                                                                        ^
+..\uIP-APP\tcp_client_demo.c(60): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+..\uIP-APP\tcp_client_demo.c:                 strcpy(tcp_client_databuf,uip_appdata);   
+..\uIP-APP\tcp_client_demo.c:                        ^
+..\uIP-APP\tcp_client_demo.c: ..\uIP-APP\tcp_client_demo.c: 2 warnings, 0 errors
+Target not created
+Build target 'Target 1'
+compiling eth0.c...
+eth0.h(21): warning:  #1-D: last line of file ends without a newline
+eth0.h:   void IAP_update(void);                                                //将收到的.bin文件烧写到FLASH中
+eth0.h:                                                                                                        ^
+eth0.c(40): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+eth0.c:         if(!strcmp("ready",tcp_client_databuf))        //收到ready信号
+eth0.c:                            ^
+eth0.c(45): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+eth0.c:                           if(!strcmp("over",tcp_client_databuf))        //收到ready信号
+eth0.c:                                             ^
+eth0.c(51): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+eth0.c:                           if(!strcmp("run_now",tcp_client_databuf))        //收到ready信号
+eth0.c:                                                ^
+eth0.c(73): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+eth0.c:                 sprintf((char*)tcp_client_databuf,eth0_string);  
+eth0.c:                                                   ^
+eth0.c(165): warning:  #177-D: variable "i" was declared but never referenced
+eth0.c:         u16 i;
+eth0.c:             ^
+eth0.c: eth0.c: 6 warnings, 0 errors
+linking...
+Program Size: Code=21414 RO-data=358 RW-data=172 ZI-data=44148  
+FromELF: creating hex file...
+"..\OBJ\ENC28J60.axf" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling eth0.c...
+eth0.h(21): warning:  #1-D: last line of file ends without a newline
+eth0.h:   void IAP_update(void);                                                //将收到的.bin文件烧写到FLASH中
+eth0.h:                                                                                                        ^
+eth0.c(39): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+eth0.c:         if(!strcmp("ready",tcp_client_databuf))        //收到ready信号
+eth0.c:                            ^
+eth0.c(44): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+eth0.c:                           if(!strcmp("over",tcp_client_databuf))        //收到ready信号
+eth0.c:                                             ^
+eth0.c(50): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+eth0.c:                           if(!strcmp("run_now",tcp_client_databuf))        //收到ready信号
+eth0.c:                                                ^
+eth0.c(72): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+eth0.c:                 sprintf((char*)tcp_client_databuf,eth0_string);  
+eth0.c:                                                   ^
+eth0.c(164): warning:  #177-D: variable "i" was declared but never referenced
+eth0.c:         u16 i;
+eth0.c:             ^
+eth0.c: eth0.c: 6 warnings, 0 errors
+linking...
+Program Size: Code=21414 RO-data=358 RW-data=172 ZI-data=44148  
+FromELF: creating hex file...
+"..\OBJ\ENC28J60.axf" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling eth0.c...
+eth0.h(21): warning:  #1-D: last line of file ends without a newline
+eth0.h:   void IAP_update(void);                                                //将收到的.bin文件烧写到FLASH中
+eth0.h:                                                                                                        ^
+eth0.c(38): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+eth0.c:         if(!strcmp("ready",tcp_client_databuf))        //收到ready信号
+eth0.c:                            ^
+eth0.c(43): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+eth0.c:                           if(!strcmp("over",tcp_client_databuf))        //收到ready信号
+eth0.c:                                             ^
+eth0.c(49): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+eth0.c:                           if(!strcmp("run_now",tcp_client_databuf))        //收到ready信号
+eth0.c:                                                ^
+eth0.c(57): error:  #20: identifier "lastuip_time" is undefined
+eth0.c:                 lastuip_time = uip_timer;
+eth0.c:                 ^
+eth0.c(71): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+eth0.c:                 sprintf((char*)tcp_client_databuf,eth0_string);  
+eth0.c:                                                   ^
+eth0.c(163): warning:  #177-D: variable "i" was declared but never referenced
+eth0.c:         u16 i;
+eth0.c:             ^
+eth0.c: eth0.c: 6 warnings, 1 error
+Target not created
+Build target 'Target 1'
+compiling eth0.c...
+eth0.h(21): warning:  #1-D: last line of file ends without a newline
+eth0.h:   void IAP_update(void);                                                //将收到的.bin文件烧写到FLASH中
+eth0.h:                                                                                                        ^
+eth0.c(38): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+eth0.c:         if(!strcmp("ready",tcp_client_databuf))        //收到ready信号
+eth0.c:                            ^
+eth0.c(43): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+eth0.c:                           if(!strcmp("over",tcp_client_databuf))        //收到ready信号
+eth0.c:                                             ^
+eth0.c(49): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+eth0.c:                           if(!strcmp("run_now",tcp_client_databuf))        //收到ready信号
+eth0.c:                                                ^
+eth0.c(70): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+eth0.c:                 sprintf((char*)tcp_client_databuf,eth0_string);  
+eth0.c:                                                   ^
+eth0.c(162): warning:  #177-D: variable "i" was declared but never referenced
+eth0.c:         u16 i;
+eth0.c:             ^
+eth0.c: eth0.c: 6 warnings, 0 errors
+linking...
+Program Size: Code=21398 RO-data=358 RW-data=168 ZI-data=44152  
+FromELF: creating hex file...
+"..\OBJ\ENC28J60.axf" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling eth0.c...
+eth0.h(21): warning:  #1-D: last line of file ends without a newline
+eth0.h:   void IAP_update(void);                                                //将收到的.bin文件烧写到FLASH中
+eth0.h:                                                                                                        ^
+eth0.c(36): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+eth0.c:         if(!strcmp("ready",tcp_client_databuf))        //收到ready信号
+eth0.c:                            ^
+eth0.c(41): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+eth0.c:                           if(!strcmp("over",tcp_client_databuf))        //收到ready信号
+eth0.c:                                             ^
+eth0.c(47): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+eth0.c:                           if(!strcmp("run_now",tcp_client_databuf))        //收到ready信号
+eth0.c:                                                ^
+eth0.c(68): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+eth0.c:                 sprintf((char*)tcp_client_databuf,eth0_string);  
+eth0.c:                                                   ^
+eth0.c(160): warning:  #177-D: variable "i" was declared but never referenced
+eth0.c:         u16 i;
+eth0.c:             ^
+eth0.c: eth0.c: 6 warnings, 0 errors
+linking...
+Program Size: Code=21398 RO-data=358 RW-data=164 ZI-data=44156  
+FromELF: creating hex file...
+"..\OBJ\ENC28J60.axf" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+eth0.h(21): warning:  #1-D: last line of file ends without a newline
+eth0.h:   void IAP_update(void);                                                //将收到的.bin文件烧写到FLASH中
+eth0.h:                                                                                                        ^
+eth0.h: main.c: 1 warning, 0 errors
+compiling eth0.c...
+eth0.h(21): warning:  #1-D: last line of file ends without a newline
+eth0.h:   void IAP_update(void);                                                //将收到的.bin文件烧写到FLASH中
+eth0.h:                                                                                                        ^
+eth0.c(41): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+eth0.c:         if(!strcmp("ready",tcp_client_databuf))        //收到ready信号
+eth0.c:                            ^
+eth0.c(46): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+eth0.c:                           if(!strcmp("over",tcp_client_databuf))        //收到ready信号
+eth0.c:                                             ^
+eth0.c(52): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+eth0.c:                           if(!strcmp("run_now",tcp_client_databuf))        //收到ready信号
+eth0.c:                                                ^
+eth0.c(75): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+eth0.c:                 sprintf((char*)tcp_client_databuf,eth0_string);  
+eth0.c:                                                   ^
+eth0.c(167): warning:  #177-D: variable "i" was declared but never referenced
+eth0.c:         u16 i;
+eth0.c:             ^
+eth0.c: eth0.c: 6 warnings, 0 errors
+compiling tcp_client_demo.c...
+..\USER\eth0.h(21): warning:  #1-D: last line of file ends without a newline
+..\USER\eth0.h:   void IAP_update(void);                                                //将收到的.bin文件烧写到FLASH中
+..\USER\eth0.h:                                                                                                        ^
+..\uIP-APP\tcp_client_demo.c(51): error:  #20: identifier "ready_flag" is undefined
+..\uIP-APP\tcp_client_demo.c:                           if( ready_flag ) 
+..\uIP-APP\tcp_client_demo.c:                               ^
+..\uIP-APP\tcp_client_demo.c(60): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+..\uIP-APP\tcp_client_demo.c:                 strcpy(tcp_client_databuf,uip_appdata);   
+..\uIP-APP\tcp_client_demo.c:                        ^
+..\uIP-APP\tcp_client_demo.c: ..\uIP-APP\tcp_client_demo.c: 2 warnings, 1 error
+Target not created
+Build target 'Target 1'
+compiling tcp_client_demo.c...
+..\USER\eth0.h(21): warning:  #1-D: last line of file ends without a newline
+..\USER\eth0.h:   void IAP_update(void);                                                //将收到的.bin文件烧写到FLASH中
+..\USER\eth0.h:                                                                                                        ^
+..\uIP-APP\tcp_client_demo.c(61): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+..\uIP-APP\tcp_client_demo.c:                 strcpy(tcp_client_databuf,uip_appdata);   
+..\uIP-APP\tcp_client_demo.c:                        ^
+..\uIP-APP\tcp_client_demo.c: ..\uIP-APP\tcp_client_demo.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=21386 RO-data=358 RW-data=164 ZI-data=44156  
+FromELF: creating hex file...
+"..\OBJ\ENC28J60.axf" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling eth0.c...
+eth0.h(21): warning:  #1-D: last line of file ends without a newline
+eth0.h:   void IAP_update(void);                                                //将收到的.bin文件烧写到FLASH中
+eth0.h:                                                                                                        ^
+eth0.c(41): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+eth0.c:         if(!strcmp("ready",tcp_client_databuf))        //收到ready信号
+eth0.c:                            ^
+eth0.c(46): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+eth0.c:                           if(!strcmp("over",tcp_client_databuf))        //收到ready信号
+eth0.c:                                             ^
+eth0.c(52): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+eth0.c:                           if(!strcmp("run_now",tcp_client_databuf))        //收到ready信号
+eth0.c:                                                ^
+eth0.c(75): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+eth0.c:                 sprintf((char*)tcp_client_databuf,eth0_string);  
+eth0.c:                                                   ^
+eth0.c(167): warning:  #177-D: variable "i" was declared but never referenced
+eth0.c:         u16 i;
+eth0.c:             ^
+eth0.c: eth0.c: 6 warnings, 0 errors
+compiling delay.c...
+compiling sys.c...
+..\SYSTEM\sys\sys.c(8): warning:  #1-D: last line of file ends without a newline
+..\SYSTEM\sys\sys.c:   }
+..\SYSTEM\sys\sys.c:    ^
+..\SYSTEM\sys\sys.c: ..\SYSTEM\sys\sys.c: 1 warning, 0 errors
+compiling tapdev.c...
+compiling tcp_client_demo.c...
+..\USER\eth0.h(21): warning:  #1-D: last line of file ends without a newline
+..\USER\eth0.h:   void IAP_update(void);                                                //将收到的.bin文件烧写到FLASH中
+..\USER\eth0.h:                                                                                                        ^
+..\uIP-APP\tcp_client_demo.c(14): error:  #20: identifier "maxrec_len" is undefined
+..\uIP-APP\tcp_client_demo.c:   extern u8 IAP_pro[maxrec_len]; 
+..\uIP-APP\tcp_client_demo.c:                     ^
+..\uIP-APP\tcp_client_demo.c(59): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+..\uIP-APP\tcp_client_demo.c:                     strcpy(tcp_client_databuf,uip_appdata);                 //将 uip_appdata复制到tcp_client_databuf中去，在eth0_receive()函数中会用得到
+..\uIP-APP\tcp_client_demo.c:                            ^
+..\uIP-APP\tcp_client_demo.c: ..\uIP-APP\tcp_client_demo.c: 2 warnings, 1 error
+compiling tcp_demo.c...
+Target not created
+Build target 'Target 1'
+compiling tcp_client_demo.c...
+..\USER\eth0.h(21): warning:  #1-D: last line of file ends without a newline
+..\USER\eth0.h:   void IAP_update(void);                                                //将收到的.bin文件烧写到FLASH中
+..\USER\eth0.h:                                                                                                        ^
+..\uIP-APP\tcp_client_demo.c(60): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+..\uIP-APP\tcp_client_demo.c:                     strcpy(tcp_client_databuf,uip_appdata);                 //将 uip_appdata复制到tcp_client_databuf中去，在eth0_receive()函数中会用得到
+..\uIP-APP\tcp_client_demo.c:                            ^
+..\uIP-APP\tcp_client_demo.c: ..\uIP-APP\tcp_client_demo.c: 2 warnings, 0 errors
+linking...
+..\OBJ\ENC28J60.axf: Error: L6218E: Undefined symbol INTX_DISABLE (referred from iap.o).
+..\OBJ\ENC28J60.axf: Error: L6218E: Undefined symbol MSR_MSP (referred from iap.o).
+..\OBJ\ENC28J60.axf: Not enough information to list image symbols.
+..\OBJ\ENC28J60.axf: Finished: 1 information, 0 warning and 2 error messages.
+Target not created
+Build target 'Target 1'
+compiling sys.c...
+linking...
+Program Size: Code=21386 RO-data=358 RW-data=164 ZI-data=44156  
+FromELF: creating hex file...
+"..\OBJ\ENC28J60.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling iap.c...
+..\IAP\iap.c(45): warning:  #223-D: function "MSR_MSP" declared implicitly
+..\IAP\iap.c:                   MSR_MSP(*(vu32*)appxaddr);                                      //初始化APP堆栈指针(用户代码区的第一个字用于存放栈顶地址)
+..\IAP\iap.c:                   ^
+..\IAP\iap.c(46): warning:  #223-D: function "INTX_DISABLE" declared implicitly
+..\IAP\iap.c:                   INTX_DISABLE();
+..\IAP\iap.c:                   ^
+..\IAP\iap.c: ..\IAP\iap.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=21386 RO-data=358 RW-data=164 ZI-data=44156  
+FromELF: creating hex file...
+"..\OBJ\ENC28J60.axf" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=21386 RO-data=358 RW-data=164 ZI-data=44156  
+FromELF: creating hex file...
+"..\OBJ\ENC28J60.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling tcp_demo.c...
+..\uIP-APP\tcp_demo.c(5): error:  #5: cannot open source input file "httpd.h": No such file or directory
+..\uIP-APP\tcp_demo.c:   #include "httpd.h"
+..\uIP-APP\tcp_demo.c:                     ^
+..\uIP-APP\tcp_demo.c: ..\uIP-APP\tcp_demo.c: 0 warnings, 1 error
+Target not created
+Build target 'Target 1'
+compiling tcp_demo.c...
+linking...
+Program Size: Code=21386 RO-data=358 RW-data=164 ZI-data=44156  
+FromELF: creating hex file...
+"..\OBJ\ENC28J60.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=21386 RO-data=358 RW-data=164 ZI-data=44156  
+FromELF: creating hex file...
+"..\OBJ\ENC28J60.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=21386 RO-data=358 RW-data=164 ZI-data=44156  
+FromELF: creating hex file...
+"..\OBJ\ENC28J60.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling tcp_demo.c...
+linking...
+Program Size: Code=21386 RO-data=358 RW-data=164 ZI-data=44156  
+FromELF: creating hex file...
+"..\OBJ\ENC28J60.axf" - 0 Error(s), 0 Warning(s).

@@ -1,0 +1,59 @@
+*** Creating Trace Output File '..\OBJ\ENC28J60.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"..\obj\main.o"'
+### List of Objects: adding '"..\obj\eth0.o"'
+### List of Objects: adding '"..\obj\stm32f10x_it.o"'
+### List of Objects: adding '"..\obj\system_stm32f10x.o"'
+### List of Objects: adding '"..\obj\led.o"'
+### List of Objects: adding '"..\obj\timerx.o"'
+### List of Objects: adding '"..\obj\stmflash.o"'
+### List of Objects: adding '"..\obj\key.o"'
+### List of Objects: adding '"..\obj\spi_enc28j60.o"'
+### List of Objects: adding '"..\obj\enc28j60.o"'
+### List of Objects: adding '"..\obj\delay.o"'
+### List of Objects: adding '"..\obj\sys.o"'
+### List of Objects: adding '"..\obj\usart.o"'
+### List of Objects: adding '"..\obj\core_cm3.o"'
+### List of Objects: adding '"..\obj\startup_stm32f10x_hd.o"'
+### List of Objects: adding '"..\obj\misc.o"'
+### List of Objects: adding '"..\obj\stm32f10x_bkp.o"'
+### List of Objects: adding '"..\obj\stm32f10x_dbgmcu.o"'
+### List of Objects: adding '"..\obj\stm32f10x_fsmc.o"'
+### List of Objects: adding '"..\obj\stm32f10x_gpio.o"'
+### List of Objects: adding '"..\obj\stm32f10x_pwr.o"'
+### List of Objects: adding '"..\obj\stm32f10x_rcc.o"'
+### List of Objects: adding '"..\obj\stm32f10x_usart.o"'
+### List of Objects: adding '"..\obj\stm32f10x_rtc.o"'
+### List of Objects: adding '"..\obj\stm32f10x_tim.o"'
+### List of Objects: adding '"..\obj\stm32f10x_spi.o"'
+### List of Objects: adding '"..\obj\stm32f10x_adc.o"'
+### List of Objects: adding '"..\obj\stm32f10x_flash.o"'
+### List of Objects: adding '"..\obj\psock.o"'
+### List of Objects: adding '"..\obj\timer.o"'
+### List of Objects: adding '"..\obj\uip.o"'
+### List of Objects: adding '"..\obj\uip_arp.o"'
+### List of Objects: adding '"..\obj\uip-fw.o"'
+### List of Objects: adding '"..\obj\uiplib.o"'
+### List of Objects: adding '"..\obj\uip-neighbor.o"'
+### List of Objects: adding '"..\obj\uip-split.o"'
+### List of Objects: adding '"..\obj\clock-arch.o"'
+### List of Objects: adding '"..\obj\tapdev.o"'
+### List of Objects: adding '"..\obj\tcp_client_demo.o"'
+### List of Objects: adding '"..\obj\tcp_demo.o"'
+### List of Objects: adding '"..\obj\iap.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M3 "..\obj\main.o" "..\obj\eth0.o" "..\obj\stm32f10x_it.o" "..\obj\system_stm32f10x.o" "..\obj\led.o" "..\obj\timerx.o" "..\obj\stmflash.o" "..\obj\key.o" "..\obj\spi_enc28j60.o" "..\obj\enc28j60.o" "..\obj\delay.o" "..\obj\sys.o" "..\obj\usart.o" "..\obj\core_cm3.o" "..\obj\startup_stm32f10x_hd.o" "..\obj\misc.o" "..\obj\stm32f10x_bkp.o" "..\obj\stm32f10x_dbgmcu.o" "..\obj\stm32f10x_fsmc.o" "..\obj\stm32f10x_gpio.o" "..\obj\stm32f10x_pwr.o" "..\obj\stm32f10x_rcc.o" "..\obj\stm32f10x_usart.o" "..\obj\stm32f10x_rtc.o" "..\obj\stm32f10x_tim.o" "..\obj\stm32f10x_spi.o" "..\obj\stm32f10x_adc.o" "..\obj\stm32f10x_flash.o" "..\obj\psock.o" "..\obj\timer.o" "..\obj\uip.o" "..\obj\uip_arp.o" "..\obj\uip-fw.o" "..\obj\uiplib.o" "..\obj\uip-neighbor.o" "..\obj\uip-split.o" "..\obj\clock-arch.o" "..\obj\tapdev.o" "..\obj\tcp_client_demo.o" "..\obj\tcp_demo.o" "..\obj\iap.o" --strict --scatter "..\OBJ\ENC28J60.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\ENC28J60.map" -o "..\OBJ\ENC28J60.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '..\OBJ\ENC28J60.axf'
+### ADS-LD Command File: '..\OBJ\ENC28J60.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '..\OBJ\ENC28J60.lnp', Handle=0x000005F8
+### Writing '.lnp' file
+### ADS-LD Command file '..\OBJ\ENC28J60.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

@@ -1,0 +1,21 @@
+..\OBJ\spi_enc28j60.o: ..\HARDWARE\new_enc28\spi_enc28j60.c
+..\OBJ\spi_enc28j60.o: ..\HARDWARE\new_enc28\spi_enc28j60.h
+..\OBJ\spi_enc28j60.o: ..\USER\stm32f10x.h
+..\OBJ\spi_enc28j60.o: ..\CORE\core_cm3.h
+..\OBJ\spi_enc28j60.o: D:\Program Files\ARM\RV31\INC\stdint.h
+..\OBJ\spi_enc28j60.o: ..\USER\system_stm32f10x.h
+..\OBJ\spi_enc28j60.o: ..\USER\stm32f10x_conf.h
+..\OBJ\spi_enc28j60.o: ..\STM32F10x_FWLib\inc\stm32f10x_adc.h
+..\OBJ\spi_enc28j60.o: ..\USER\stm32f10x.h
+..\OBJ\spi_enc28j60.o: ..\STM32F10x_FWLib\inc\stm32f10x_bkp.h
+..\OBJ\spi_enc28j60.o: ..\STM32F10x_FWLib\inc\stm32f10x_flash.h
+..\OBJ\spi_enc28j60.o: ..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h
+..\OBJ\spi_enc28j60.o: ..\STM32F10x_FWLib\inc\stm32f10x_gpio.h
+..\OBJ\spi_enc28j60.o: ..\STM32F10x_FWLib\inc\stm32f10x_pwr.h
+..\OBJ\spi_enc28j60.o: ..\STM32F10x_FWLib\inc\stm32f10x_rcc.h
+..\OBJ\spi_enc28j60.o: ..\STM32F10x_FWLib\inc\stm32f10x_rtc.h
+..\OBJ\spi_enc28j60.o: ..\STM32F10x_FWLib\inc\stm32f10x_spi.h
+..\OBJ\spi_enc28j60.o: ..\STM32F10x_FWLib\inc\stm32f10x_tim.h
+..\OBJ\spi_enc28j60.o: ..\STM32F10x_FWLib\inc\stm32f10x_usart.h
+..\OBJ\spi_enc28j60.o: ..\STM32F10x_FWLib\inc\misc.h
+..\OBJ\spi_enc28j60.o: ..\STM32F10x_FWLib\inc\stm32f10x_exti.h

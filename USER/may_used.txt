@@ -1,0 +1,33 @@
+/*以下的功能不需要实现*/
+void bincat(unsigned char *a,unsigned char *b)
+{
+   
+}
+
+void  bincpy(u8* strDest, u8* strSrc)  
+{   
+    while((*strDest++ = *strSrc++) != '\0');  
+} 
+
+/*测试S1是否包含S2，若包含，则返回1，若非，则返回0*/
+u8 binbin(u8 *s1,u8 *s2)            
+{
+	  int num = 0;
+		if(s1 == NULL || s2 == NULL)
+		 return 0;
+		while(num <= 1500)
+		{  
+				int i = 0;
+				 while(1)
+        {
+						 if(s2[i]  == NULL)
+									return 1;
+						 if(s2[i] != s1[i])
+									break;
+						 i++;
+				 }
+			 s1++;
+			 num++;
+	  }
+		return 0;
+}
